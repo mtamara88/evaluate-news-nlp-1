@@ -12,6 +12,7 @@ async function handleSubmit(event) {
             method: 'POST',
             cache: 'no-cache',
             credentials: 'same-origin',
+            mode: 'cors',
             headers: {
                 'Content-Type': 'application/json',
             },
