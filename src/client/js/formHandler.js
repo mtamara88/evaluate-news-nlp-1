@@ -10,7 +10,6 @@ async function handleSubmit(event) {
 
         await fetch('/userData', {
             method: 'POST',
-            cache: 'no-cache',
             credentials: 'same-origin',
             mode: 'cors',
             headers: {

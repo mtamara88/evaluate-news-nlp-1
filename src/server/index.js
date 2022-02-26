@@ -22,8 +22,8 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 
 app.get('/', function (req, res) {
-    res.sendFile('dist/index.html')
-    //res.sendFile(path.resolve('/src/client/views/index.html'))
+    //res.sendFile('dist/index.html')
+    res.sendFile(path.resolve('/src/client/views/index.html'))
 })
 
 // designates what port the app will listen to for incoming requests
@@ -33,7 +33,7 @@ app.listen(8080, function () {
 
 // POST method
 app.post('/userData', async (req, res) => {
-    let articleURL = req.body.formText;
+    let articleURL = req.body.fromText;
 
     console.log('url sent to the server', articleURL);
 

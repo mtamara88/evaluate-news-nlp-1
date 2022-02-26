@@ -1,7 +1,9 @@
 form {
-    border: 1px solid #545454;
-    border-radius: 3px;
+    border: 1px solid #141414;
+    border-radius: 2px;
     padding: 40px;
+    box-shadow: 5px 5px 8px 0px rgb(88, 140, 153);
+    max-width: 80%;
 }
 
 input {
@@ -9,4 +11,9 @@ input {
     width: 100%;
     line-height: 16px;
     margin: 10px 0;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

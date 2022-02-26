@@ -1,7 +1,13 @@
+$font-stack: Helvetica,
+sans-serif;
+$primary-color: #d0dfe4;
+
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    margin: 0 auto;
+    background-color: $primary-color;
 }
 
 main {
@@ -11,4 +17,9 @@ main {
 section {
     max-width: 800px;
     margin: 50px auto;
+}
+section.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
