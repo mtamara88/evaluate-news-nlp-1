@@ -9,18 +9,19 @@ module.exports = {
     entry: './src/client/index.js',
     mode: 'development',
     devtool: 'source-map',
-    stats: 'verbose',
+    //stats: 'verbose',
     devServer: {
         host: 'localhost',
         port: 8080,
     },
     output: {
+        path: path.join(__dirname, 'dist'),
+        filename: 'bundle.min.js',
         libraryTarget: 'var',
         library: 'Client'
     },
     module: {
-        rules: [
-            {
+        rules: [{
                 test: '/\.js$/',
                 exclude: /node_modules/,
                 loader: "babel-loader"

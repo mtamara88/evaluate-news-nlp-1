@@ -1,8 +1,8 @@
 form {
-    border: 1px solid #141414;
-    border-radius: 2px;
+    border: 1.5px solid #141414;
+    border-radius: 8px;
     padding: 40px;
-    box-shadow: 5px 5px 8px 0px rgb(88, 140, 153);
+    box-shadow: 5px 5px 8px 2px rgb(88, 140, 153);
     max-width: 80%;
 }
 
@@ -16,4 +16,5 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }

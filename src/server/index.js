@@ -21,19 +21,19 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
 
-app.get('/', function (req, res) {
+app.get('/', function(req, res) {
     //res.sendFile('dist/index.html')
     res.sendFile(path.resolve('/src/client/views/index.html'))
 })
 
 // designates what port the app will listen to for incoming requests
-app.listen(8080, function () {
+app.listen(8080, function() {
     console.log('Example app listening on port 8080!')
 })
 
 // POST method
-app.post('/userData', async (req, res) => {
-    let articleURL = req.body.fromText;
+app.post('/userData', async(req, res) => {
+    let articleURL = req.body.input;
 
     console.log('url sent to the server', articleURL);
 
@@ -42,8 +42,11 @@ app.post('/userData', async (req, res) => {
     try {
         const data = await resp.json();
         res.send(data);
+        console.log(resp);
+
     } catch (error) {
         console.log("error", error);
     }
-    resp();
+
+
 })

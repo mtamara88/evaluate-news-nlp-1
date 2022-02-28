@@ -3,4 +3,22 @@ footer {
     justify-content: center;
     text-align: center;
     padding: 1rem;
+    
+    .icons {
+        .fa {
+            font-size: 22px;
+            padding: 5px;
+        }
+        .fa-twitter {
+            color: #3cadf3;
+        }
+
+        .fa-linkedin {
+            color: #147eaf;
+        }
+        
+        .fa-github{
+            color: #0e0e0e;
+        }
+    }
 }

@@ -7,4 +7,4 @@ function checkURL(url) {
     }
 }
 
-export { checkURL }
+export { checkURL };

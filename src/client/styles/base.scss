@@ -1,7 +1,6 @@
 $font-stack: Helvetica,
 sans-serif;
 $primary-color: #d0dfe4;
-
 body {
     display: flex;
     flex-direction: column;
@@ -14,10 +13,27 @@ main {
     flex: 2;
 }
 
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    font-family: $font-stack, bold;
+    text-shadow: 1px 2px #b1b1b1;
+}
+
+h2 {
+    font-family: $font-stack;
+    font-weight: bold;
+    color: chocolate;
+    margin-bottom: 15px;
+}
+
 section {
     max-width: 800px;
     margin: 50px auto;
 }
+
 section.result {
     display: flex;
     flex-direction: column;

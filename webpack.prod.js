@@ -11,8 +11,7 @@ module.exports = {
     entry: './src/client/index.js',
     mode: 'production',
     module: {
-        rules: [
-            {
+        rules: [{
                 test: '/\.js$/',
                 exclude: /node_modules/,
                 loader: "babel-loader"
@@ -24,6 +23,8 @@ module.exports = {
         ]
     },
     output: {
+        path: path.join(__dirname, 'dist'),
+        filename: 'bundle.min.js',
         libraryTarget: 'var',
         library: 'Client'
     },
